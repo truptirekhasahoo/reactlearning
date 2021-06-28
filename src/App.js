@@ -1,23 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+//import MyFirstcomp from './components/MyFirstcomp'
+//import ClassComp from './components/ClassComp'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import HeaderComp from './components/HeaderComp/HeaderComp'
+// import MainComp from './components/MainComp/MainComp'
+// import FooterComp from './components/FooterComp'
+// import StateComp from './components/Personcomp/PersonComp'
+// import PersonComp from './components/Personcomp/PersonComp'
+// import AComponent from './components/ChlidParent/AComponent'
+// import Acomponent from './components/Taskcomp/Acomponent'
+// import Parent from './components/ChildToParent/Parent'
 
+//import A from './components/ContextApi/A'
+// import MyForm from './components/Form/MyForm'
+//import RegisterForm from './components/RegisterForm/RegisterForm'
+import Homepage from './components/Routing/Home'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <HeaderComp />
+      <MainComp />
+      <FooterComp /> */}
+     {/* <MyFirstcomp />
+     <h2>Welcome to first react app</h2><br />
+
+     <ClassComp /> 
+     <button className="btn btn-dark">click me</button> */}
+     {/* < PersonComp /> */}
+      {/* <Acomponent />  */}
+     {/* <Parent /> */}
+     {/* <A />  */}
+     {/* <MyForm /> */}
+     {/* <RegisterForm /> */}
+     
+     <Homepage />
     </div>
   );
 }

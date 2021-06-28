@@ -1,0 +1,8 @@
+.myBody {
+    background-color:  rgb(193, 209, 193);
+    align-items: center;
+    padding-left: 300px;
+}
+.myCard {
+    width: 18rem;
+}
