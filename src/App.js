@@ -15,7 +15,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 //import A from './components/ContextApi/A'
 // import MyForm from './components/Form/MyForm'
 //import RegisterForm from './components/RegisterForm/RegisterForm'
-import Homepage from './components/Routing/Home'
+ import Homepage from './components/Routing/Home'
+
 function App() {
   return (
     <div className="App">
