@@ -1,4 +1,6 @@
 import React from "react";
+import UserDetails from './UserDetails'
+import MyContext from '../ContextApi/Context'
 
 import axios from "axios";
 class User extends React.Component {
@@ -6,6 +8,7 @@ class User extends React.Component {
     super(props);
     this.state = {
       userData: [],
+      userSelected: -1
     };
   }
   componentDidMount() {
@@ -21,32 +24,52 @@ class User extends React.Component {
         console.log(error);
       });
   }
+  userSelected = (selectionIndex) => {
+    this.setState({ userSelected: selectionIndex });
+  };
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <h3 className="text-warning">User Data</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>city</th>
-                <th>Company</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.userData.map((data, index) => (
-                <tr>
-                  <td>{data.name}</td>
-                  <td>{data.email}</td>
-                  <td>{data.address.city}</td>
-                  <td>{data.company.name}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      <div>
+        {!this.state.userSelected ||
+          this.state.userSelected < 0 &&
+            // show all users
+            <div className="container">
+              <div className="row">
+                <h3 className="text-warning">User Data</h3>
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">City</th>
+                      <th scope="col">Company</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {this.state.userData.map((data, index) => (
+                      <tr scope="row">
+                        <td>{data.name}</td>
+                        <td>{data.email}</td>
+                        <td>{data.address.city}</td>
+                        <td>{data.company.name}</td>
+                        <td>
+                          <button onClick={() => this.userSelected(index)}>
+                            Detail
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          }
+
+          {this.state.userSelected >= 0 &&
+            <MyContext.Provider value={this.state.userData[this.state.userSelected]}>
+              <UserDetails />
+            </MyContext.Provider>
+          }
       </div>
     );
   }

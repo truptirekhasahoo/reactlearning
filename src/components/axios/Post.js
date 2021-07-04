@@ -26,11 +26,9 @@ class Post extends Component {
       <div class="container">
         {this.state.userData.map((data, index) => {
           return <div class="card">
-            <div class="card-body">
+            <div class="card-card bg-light">
               <h4 class="card-title">{data.id}</h4>
               <p class="card-text">{data.body}</p>
-              <a href="#" class="card-link"></a>
-              <a href="#" class="card-link"></a>
             </div>
           </div>;
         })}

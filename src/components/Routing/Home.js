@@ -9,6 +9,9 @@ import Angular from "./Angular";
 import Bootstrap from "./Bootstrap"
 import Lifecyclemethod from "../Lifecyclemethod/Lifecyclemethod";
 import User from '../axios/User'
+// import HigherOrder from '../HigherOrderComponent/HigherOrder'
+// import ButtonClick from '../HigherOrderComponent/ButtonClick'
+import HigherOrder from '../HigherOrderComponent/Home'
 
 
 class Home extends React.Component {
@@ -27,6 +30,7 @@ class Home extends React.Component {
             {/* <Route path="/Angular" component={Angular}/> */}
             <Route path="/User" component={User}/>
             <Route path="/Post" component={Post}/>
+            <Route path="/HigherOrder" component={HigherOrder}/>
             {/* <Route path="/Bootstrap" component={Bootstrap}/> */}
           </Switch>
         </BrowserRouter>
