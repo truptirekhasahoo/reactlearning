@@ -10,3 +10,7 @@
 .btn-primary{
   background: linear-gradient(45deg, white, black );
 } 
+.reactjs_contain{
+text-align: right;
+border-color: brown;
+}
