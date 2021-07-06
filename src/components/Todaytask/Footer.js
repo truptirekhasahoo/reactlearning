@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
         return(
-            <div class="row myFooter">
-            <div class="col-6"> </div>
-            <div class="col-6">Footer</div>
-          </div>
+            <div class="card-footer bg-dark text-center">
+            <a href="#" class="btn btn-outline-light">@Footer</a>
+        </div>
         )
     }
 }
