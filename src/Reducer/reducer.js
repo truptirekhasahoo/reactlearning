@@ -1,4 +1,22 @@
-const myReducer=()=>{
+import InitialData from "../InitialData";
 
-}
-export default myReducer
+const myReducer = (state = InitialData, action) => {
+  switch (action.type) {
+    case "user":
+      state = {
+        ...state,
+        user: action.payload,
+      };
+      return state;
+      break;
+      case "post":
+      state = {
+        ...state,
+        post: action.payload,
+      };
+      return state;
+    default:
+      return state;
+  }
+};
+export default myReducer;

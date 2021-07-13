@@ -15,8 +15,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import A from './components/ContextApi/A'
 // import MyForm from './components/Form/MyForm'
 // import RegisterForm from './components/RegisterForm/RegisterForm'
-//  import Homepage from './components/Routing/Home'
-import Home from "./components/Todaytask/Home";
+ import Homepage from './components/Routing/Home'
+// import Home from "./components/Todaytask/Home";
+// import HomeRedux from '../src/components/Redux/Home'
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
       {/* <MyForm /> */}
       {/* <RegisterForm />  */}
 
-      <Home />
+      {/* <Home /> */}
+      <Homepage />
+      {/* <HomeRedux /> */}
     </div>
   );
 }

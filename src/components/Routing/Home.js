@@ -8,10 +8,13 @@ import Post from '../axios/Post'
 import Angular from "./Angular";
 import Bootstrap from "./Bootstrap"
 import Lifecyclemethod from "../Lifecyclemethod/Lifecyclemethod";
-import User from '../axios/User'
+import User from '../Redux/User'
+import post from '../Redux/Post'
 // import HigherOrder from '../HigherOrderComponent/HigherOrder'
 // import ButtonClick from '../HigherOrderComponent/ButtonClick'
 import HigherOrder from '../HigherOrderComponent/Home'
+import HomeRedux from '../Redux/Home'
+
 
 
 class Home extends React.Component {
@@ -24,7 +27,8 @@ class Home extends React.Component {
         <BrowserRouter> 
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Homepage} />
+            {/* <Route exact path="/" component={Homepage} /> */}
+            <Route exact path="/" component={HomeRedux} />
             {/* <Route path="/react" component={Reactjs}/> */}
             <Route path="/lcm" component={Lifecyclemethod}/>
             {/* <Route path="/Angular" component={Angular}/> */}

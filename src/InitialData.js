@@ -1,5 +1,5 @@
-var information={
-    user:[],
-    post:[]
+var information = {
+  user: [],
+  post: []
 }
-export default information
+export default information;
