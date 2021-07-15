@@ -8,11 +8,22 @@ const myReducer = (state = InitialData, action) => {
         user: action.payload,
       };
       return state;
-      break;
-      case "post":
+    case "post":
       state = {
         ...state,
         post: action.payload,
+      };
+      return state;
+    case "username":
+      state = {
+        ...state,
+        username: action.payload,
+      };
+      return state;
+    case "location":
+      state = {
+        ...state,
+        location: action.payload,
       };
       return state;
     default:

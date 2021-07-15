@@ -9,7 +9,7 @@ class Home extends Component {
         this.setState({
           users: res.data,
         });
-        myAction(res.data);
+        myAction(res.data, "user");
       },
       (error) => {
         alert("something went wrong");
@@ -20,7 +20,7 @@ class Home extends Component {
         this.setState({
           posts: res.data,
         });
-        myAction(res.data);
+        myAction(res.data, "post");
       },
       (error) => {
         alert("something went wrong");

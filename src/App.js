@@ -15,9 +15,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import A from './components/ContextApi/A'
 // import MyForm from './components/Form/MyForm'
 // import RegisterForm from './components/RegisterForm/RegisterForm'
- import Homepage from './components/Routing/Home'
-// import Home from "./components/Todaytask/Home";
+//  import Homepage from './components/Routing/Home'
+//  import Home from "./components/Todaytask/Home";
 // import HomeRedux from '../src/components/Redux/Home'
+import UserNameLocation from './components/NewTask/UserNameLocation'
+
+// import FirstHook from './components/Hook/first'
+// import GrandParent from './components/Hook/GrandParent'
 
 function App() {
   return (
@@ -38,8 +42,12 @@ function App() {
       {/* <RegisterForm />  */}
 
       {/* <Home /> */}
-      <Homepage />
+      {/* <Homepage /> */}
+      <UserNameLocation />
       {/* <HomeRedux /> */}
+      {/* <FirstHook /> */}
+      {/* <GrandParent /> */}
+ 
     </div>
   );
 }

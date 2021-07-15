@@ -3,13 +3,13 @@ import Navbar from "./Navbar";
 import { BrowserRouter,Switch,Route} from "react-router-dom";
 import Homepage from './Homepage'
 // import Reactjs from './React'
-import Post from '../axios/Post'
+// import Post from '../axios/Post'
 
 import Angular from "./Angular";
 import Bootstrap from "./Bootstrap"
 import Lifecyclemethod from "../Lifecyclemethod/Lifecyclemethod";
 import User from '../Redux/User'
-import post from '../Redux/Post'
+import Post from '../Redux/Post'
 // import HigherOrder from '../HigherOrderComponent/HigherOrder'
 // import ButtonClick from '../HigherOrderComponent/ButtonClick'
 import HigherOrder from '../HigherOrderComponent/Home'
