@@ -1,13 +1,10 @@
-import React from "react";
-import Child from "./Child";
+import React, { useState }  from "react";
 
-const Parent = params => {
+const Parent = (props) => {
   return (
     <>
-      <button onClick={() => params.setName("i'm from Parent")}>
-        from Parent
-      </button>
-      <Child setName={params.setName} />
+      <h1>I am Parent</h1>
+      <div>Message from Grand Parent: "{props.name}"</div>
     </>
   );
 };

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Parent from "./Parent";
 
 const GrandParent = () => {
-  const [name, setName] = useState("i'm Grand Parent");
+  const [name, setName] = useState("I'm Grand Parent");
   return (
     <>
+      <h1>Grand Parent</h1>
       <div>{name}</div>
-      <Parent setName={setName} />
+      <Parent name={name} />
     </>
   );
 };

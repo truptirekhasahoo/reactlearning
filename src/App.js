@@ -18,10 +18,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //  import Homepage from './components/Routing/Home'
 //  import Home from "./components/Todaytask/Home";
 // import HomeRedux from '../src/components/Redux/Home'
-import UserNameLocation from './components/NewTask/UserNameLocation'
+// import UserNameLocation from './components/NewTask/UserNameLocation'
 
 // import FirstHook from './components/Hook/first'
 // import GrandParent from './components/Hook/GrandParent'
+import Score from './components/Redux/Score'
 
 function App() {
   return (
@@ -43,10 +44,11 @@ function App() {
 
       {/* <Home /> */}
       {/* <Homepage /> */}
-      <UserNameLocation />
+      {/* <UserNameLocation /> */}
       {/* <HomeRedux /> */}
       {/* <FirstHook /> */}
       {/* <GrandParent /> */}
+      <Score />
  
     </div>
   );
