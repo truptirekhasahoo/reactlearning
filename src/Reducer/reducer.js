@@ -26,6 +26,12 @@ const myReducer = (state = InitialData, action) => {
         location: action.payload,
       };
       return state;
+    case "scorevalue":
+      state = {
+        ...state,
+        scorevalue: action.payload,
+      };
+      return state;
     default:
       return state;
   }

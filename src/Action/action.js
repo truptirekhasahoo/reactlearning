@@ -21,6 +21,11 @@ const myAction = (userdata, ref) => {
       type: "location",
       payload: userdata,
     });
+  } else if (ref === "scorevalue") {
+    myStore.dispatch({
+      type: "scorevalue",
+      payload: userdata,
+    });
   }
 };
 
