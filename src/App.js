@@ -22,7 +22,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // import FirstHook from './components/Hook/first'
 // import GrandParent from './components/Hook/GrandParent'
-import Score from './components/Redux/Score'
+// import Score from './components/Redux/Score'
+import MyuseEffect from './components/Hook/useEffect'
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
       {/* <HomeRedux /> */}
       {/* <FirstHook /> */}
       {/* <GrandParent /> */}
-      <Score />
+      {/* <Score /> */}
+      <MyuseEffect />
  
     </div>
   );

@@ -14,6 +14,7 @@ import Post from '../Redux/Post'
 // import ButtonClick from '../HigherOrderComponent/ButtonClick'
 import HigherOrder from '../HigherOrderComponent/Home'
 import HomeRedux from '../Redux/Home'
+import MyuseEffect from '../Hook/useEffect'
 
 
 
@@ -33,7 +34,7 @@ class Home extends React.Component {
             <Route path="/lcm" component={Lifecyclemethod}/>
             {/* <Route path="/Angular" component={Angular}/> */}
             <Route path="/User" component={User}/>
-            <Route path="/Post" component={Post}/>
+            <Route path="/Post" component={MyuseEffect}/>
             <Route path="/HigherOrder" component={HigherOrder}/>
             {/* <Route path="/Bootstrap" component={Bootstrap}/> */}
           </Switch>
