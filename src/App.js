@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import A from './components/ContextApi/A'
 // import MyForm from './components/Form/MyForm'
 // import RegisterForm from './components/RegisterForm/RegisterForm'
-//  import Homepage from './components/Routing/Home'
+import Homepage from "./components/Routing/Home";
 //  import Home from "./components/Todaytask/Home";
 // import HomeRedux from '../src/components/Redux/Home'
 // import UserNameLocation from './components/NewTask/UserNameLocation'
@@ -23,7 +23,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import FirstHook from './components/Hook/first'
 // import GrandParent from './components/Hook/GrandParent'
 // import Score from './components/Redux/Score'
-import MyuseEffect from './components/Hook/useEffect'
+// import MyuseEffect from './components/Hook/useEffect'
+// import UseRefDemo from './components/Hook/UseRefDemo'
+// import UseReducer from './components/Hook/UseReducer'
+// import Home from './components/Hook/CallbackFuction/Home'
 
 function App() {
   return (
@@ -44,14 +47,16 @@ function App() {
       {/* <RegisterForm />  */}
 
       {/* <Home /> */}
-      {/* <Homepage /> */}
+      <Homepage />
       {/* <UserNameLocation /> */}
       {/* <HomeRedux /> */}
       {/* <FirstHook /> */}
       {/* <GrandParent /> */}
       {/* <Score /> */}
-      <MyuseEffect />
- 
+      {/* <MyuseEffect /> */}
+      {/* <UseRefDemo /> */}
+      {/* <UseReducer /> */}
+      {/* <Home /> */}
     </div>
   );
 }

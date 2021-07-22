@@ -55,7 +55,7 @@ const MyuseEffect = () => {
                   class="card-img-top"
                   src={photo.thumbnailUrl}
                   alt="Card image cap"
-                ></img>
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
